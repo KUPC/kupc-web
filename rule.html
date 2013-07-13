@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<title>京都大学プログラミングコンテスト</title>
+</head>
+<body>
+<div id="top">
+   <div id="header">
+      <h1><a href="index.html">京都大学プログラミングコンテスト</a></h1>
+
+      <div class="social">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.kupc.jp/" data-text="京都大学プログラミングコンテスト" data-lang="ja">ツイ～ト</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+
+   </div>
+   <div id="contents">
+      <div id="subL">
+         <div class="section">
+            <h2>KUPC 2013</h2>
+            <ul>
+            <li><a href="index.html">ご案内</a></li>
+            <li><a href="rule.html">ルール</a></li>
+            <li><a href="onsite.html">会場参加</a></li>
+            <li><a href="staff.html">運営スタッフ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+         </div>
+         <div class="section">
+            <h2>過去の KUPC</h2>
+            <ul>
+            <li><a href="2011.html">KUPC 2011</a></li>
+            <li><a href="2012.html">KUPC 2012</a></li>	    
+            </ul>
+         </div>
+         <div class="section">
+            <h2>外部リンク</h2>
+            <ul>
+            <li><a href="link.html">リンク集</a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="main">
+
+
+  <h2>ルール</h2>
+  <h3>参加要件</h3>
+  <p>所属によらず，どなたでも参加することが可能です．
+  <a href="http://atcoder.jp/" target="_blank">AtCoder</a> 上でコンテストを行うので，事前に <a href="http://atcoder.jp/" target="_blank">AtCoder</a> 上のアカウントを取得しておいて下さい．</p>
+
+  <h3>環境</h3>
+  <p>コンテストでは以下の言語が使用可能です．AtCoder で使用可能な言語は全て使用可能にする予定です．</p>
+  <ul>
+    <li>C (GCC4.4.6)</li>
+    <li>C++ (G++4.6.3)</li>
+    <li>C++ (GCC4.4.6)</li>
+    <li>C (GCC4.6.3)</li>
+    <li>D (DMD 2.058)</li>
+    <li>Java (OpenJDK 1.6.0)</li>
+    <li>C# (Mono 2.10.5)</li>
+    <li>PHP (PHP 5.3.6)</li>
+    <li>Python (2.7.2)</li>
+    <li>Perl (5.12.4)</li>
+    <li>Ruby (1.9.2)</li>
+    <li>C++11 (GCC 4.6.1)</li>
+    <li>Haskell (GHC 7.0.3)</li>
+    <li>Pascal (fpc 2.4.4)</li>
+    <li>JavaScript (Node.js 0.6.12)</li>
+  </ul>
+
+  <h3>順位付け</h3>
+  <ul>
+    <li>1つの問題を解くことで 100 点を獲得します．問題によっては部分点が設けられており，部分点に対するケースを解くことで 100 点未満の点数を獲得します．部分点は問題によって変わります．</li>
+    <li>順位は獲得した得点が高いほど上になります．得点が同じ場合，<b>ペナルティタイム</b>が小さいほど上になります．</li>
+    <li><b>ペナルティタイム</b>とは，最後に提出した正しい解答の提出時間に，(最終的に正しい解答を得た問題に対する誤答の数) × 4分 を足した時間です．</li>
+  </ul>
+
+  <h3>注意事項</h3>
+  <ul>
+    <li>コンテスト中，Web や参考書などの資料を参照することは許可されます．</li>
+    <li>ソースコードのコピー・ペーストは許可されます．</li>
+    <li>提出されたソースコードはコンテスト終了後に公開されます．</li>
+    <br>
+    <li>C++で解答する場合，iostream ではなく printf/scanf を使用することをおすすめします．</li>
+    <li>プログラムの実行制限時間・使用メモリ制限は各テストケースごとに課されます．</li>
+    <li>Compilation Errorはペナルティタイムには加算されません．</li>
+    <br>
+    <li>コンテスト中何か質問等がある場合は AtCoder 上から質問できます．</li>
+    <li>問題文の変更や再ジャッジが発生した場合，AtCoder 上でアナウンスされます．</li>
+    <!--
+    <br>
+    <li>(8/6 追記) Javaをお使いの場合，クラス名は「Main」にして下さい．</li>
+    <li>(8/6 追記) Cをお使いの場合，main関数が必ず0を返すようにして下さい．(return 0; を書いておけばよいです)</li>
+    <li>(8/6 追記) コンテストが終了1時間前になると順位表は<b>凍結</b>され，コンテスト終了後まで順位が更新されなくなります．ただし凍結後も提出の有無だけは分かるようになっており，凍結後に提出された問題はセルの色が変わります．</li>
+    -->
+  </ul>
+
+  <h3>禁止事項</h3>
+  以下の行為を固く禁じます．
+  <ul>
+    <li>チームでの参加．(当コンテストは<b>個人戦</b>とします．)</li>
+    <li>コンテスト時間中にコンテスト中に解法などをウェブサイト上へ書き込む行為．</li>
+    <li>システムに対し攻撃をかける行為．</li>
+  </ul>
+
+
+  </div>
+  </div>
+   <div id="footer">
+      <div class="copyright">Copyright Kyoto University Programming Contest 2011 - 2013 </div>
+   </div><!-- footer end -->
+</div><!-- top end -->
+</body>
+</html>
+
