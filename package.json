@@ -8,6 +8,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
     "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -16,6 +17,7 @@
     "watch-less": "npm run build-css && less-watch-compiler src src"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "less-watch-compiler": "^1.11.3"
   }
 }
