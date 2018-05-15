@@ -1,7 +1,9 @@
+import ContestInfo from './ContestInfo';
+
 const Data = {
   contest: [
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2018',
       // date: '2018-mm-dd',
       // links: [
@@ -22,10 +24,10 @@ const Data = {
       //   { id: 'K', title: 'Xor Summation Pattern' },
       //   { id: 'L', title: 'Coin Game 2017' },
       // ],
-      staff: ['加藤剛', '齋藤大聖', '眞田嵩大', '曽根 大雅', '高橋 昌大', '西川剛史', '脇坂 遼'],
+      staffs: ['加藤剛', '齋藤大聖', '眞田嵩大', '曽根 大雅', '高橋 昌大', '西川剛史', '脇坂 遼'],
     },
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2017',
       date: '2017-10-01',
       links: [
@@ -46,10 +48,10 @@ const Data = {
         { id: 'K', title: 'Xor Summation Pattern' },
         { id: 'L', title: 'Coin Game 2017' },
       ],
-      staff: ['天野光陽', '今西諒文', '加藤剛', '齋藤大聖', '佐藤竜馬', '眞田嵩大', '瀧瀬和樹', '中野優', '西川剛史'],
+      staffs: ['天野光陽', '今西諒文', '加藤剛', '齋藤大聖', '佐藤竜馬', '眞田嵩大', '瀧瀬和樹', '中野優', '西川剛史'],
     },
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2016',
       date: '2016-10-02',
       links: [
@@ -69,10 +71,10 @@ const Data = {
         { id: 'J', title: '色塗り / Coloring' },
         { id: 'K', title: '百目おばけ / Hundred Eyes Monster' },
       ],
-      staff: ['天野光陽', '今西諒文', '桐谷頼史', '佐藤竜馬', '眞田嵩大', '瀧瀬和樹', '中野優', '西川剛史'],
+      staffs: ['天野光陽', '今西諒文', '桐谷頼史', '佐藤竜馬', '眞田嵩大', '瀧瀬和樹', '中野優', '西川剛史'],
     },
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2015',
       date: '2015-10-24',
       links: [
@@ -93,10 +95,10 @@ const Data = {
         { id: 'K', title: 'SOULBLOCK' },
         { id: 'L', title: 'コインゲーム' },
       ],
-      staff: ['今西諒文', '江原昌吾', '岡智洋', '西村翔一', '瀧瀬和樹'],
+      staffs: ['今西諒文', '江原昌吾', '岡智洋', '西村翔一', '瀧瀬和樹'],
     },
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2014',
       date: '2014-07-05',
       links: [
@@ -117,10 +119,10 @@ const Data = {
         { id: 'K', title: '弱点' },
         { id: 'L', title: 'べき乗数' },
       ],
-      staff: ['今西諒文', '江原昌吾', '岡智洋', '楠本充', '小浜翔太郎', '田村和範', '西村翔一', '花田裕一朗', '広瀬稔', '森槙悟'],
+      staffs: ['今西諒文', '江原昌吾', '岡智洋', '楠本充', '小浜翔太郎', '田村和範', '西村翔一', '花田裕一朗', '広瀬稔', '森槙悟'],
     },
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2013',
       date: '2013-07-06',
       links: [
@@ -140,10 +142,10 @@ const Data = {
         { id: 'J', title: 'タイル置き' },
         { id: 'K', title: 'encode/decode' },
       ],
-      staff: ['今西諒文', '岡智洋', '楠本充', '小浜翔太郎', '田村和範', '花田裕一朗', '広瀬稔', '森槙悟'],
+      staffs: ['今西諒文', '岡智洋', '楠本充', '小浜翔太郎', '田村和範', '花田裕一朗', '広瀬稔', '森槙悟'],
     },
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2012',
       date: '2012-07-01',
       links: [
@@ -164,10 +166,10 @@ const Data = {
         { id: 'J', title: '刺身' },
         { id: 'K', title: 'XOR回廊' },
       ],
-      staff: ['今城健太郎', '楠本充', '小浜翔太郎', '田村和範', '花田裕一朗', '森槙悟'],
+      staffs: ['今城健太郎', '楠本充', '小浜翔太郎', '田村和範', '花田裕一朗', '森槙悟'],
     },
     {
-      module: 'ContestInfo',
+      component: ContestInfo,
       suffix: '2011',
       date: '2011-08-06',
       links: [
@@ -187,11 +189,11 @@ const Data = {
         { id: 'I', title: '山' },
         { id: 'J', title: 'Mod 3 Knights Out' },
       ],
-      staff: ['今城健太郎', '楠本充', '西田尚平', '平澤恭治', '森槙悟', '吉田悠一'],
+      staffs: ['今城健太郎', '楠本充', '西田尚平', '平澤恭治', '森槙悟', '吉田悠一'],
     },
   ],
   contact: {
-    mail: 'kupcstaff@gmail.com',
+    mail: 'kupcstaffs@gmail.com',
     twitter: '@kupc_official',
   },
 };

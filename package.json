@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "deploy": "npm run build && gh-pages -d build",
+    "start": "concurrently 'npm run client' 'npm run watch-less'",
     "client": "react-scripts start",
+    "deploy": "npm run build && gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -17,6 +20,7 @@
     "watch-less": "npm run build-css && less-watch-compiler src src"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "gh-pages": "^1.1.0",
     "less-watch-compiler": "^1.11.3"
   }
