@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './ContestInfo.css'
-import Data from './data';
-import ClassNames from 'classnames';
 import OnsiteInfo from './OnsiteInfo';
 import Footer from './Footer';
+import Title from './Title';
+import Menu from './Menu';
 
 class ContestInfo extends Component {
   isUpcomingContest() {
@@ -20,30 +20,6 @@ class ContestInfo extends Component {
           : <OldContestInfo data={this.props.data} />
         }
       </div>
-    );
-  }
-}
-class Title extends Component {
-  render() {
-    return (
-      <header className="Title">
-        京都大学プログラミングコンテスト {this.props.suffix}
-      </header>
-    );
-  }
-}
-class Menu extends Component {
-  render() {
-    return (
-      <ul className="Menu">
-        {Data.contest.map(contest =>
-          <li key={contest.suffix} className={ClassNames({ selected: contest.suffix === this.props.selectedKey })}>
-            <a href={`/${contest.suffix}/`}>
-              {contest.suffix}
-            </a>
-          </li>
-        )}
-      </ul>
     );
   }
 }
