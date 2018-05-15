@@ -1,0 +1,27 @@
+.Menu {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  > li {
+    > a {
+      display: block;
+      color: hsl(0, 0%, 30%);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 2px 10px;
+    }
+    &.selected,
+    &:hover {
+      border-bottom: 2px solid hsl(0, 60%, 45%);
+      > a {
+        color: hsl(0, 0%, 20%);
+      }
+    }
+  }
+  > li + li {
+    border-left: 1px dotted hsl(0, 0%, 90%);
+  }
+}

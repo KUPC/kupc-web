@@ -8,10 +8,10 @@ class Footer extends Component {
     return (
       <ul className="Footer">
         {contact.mail ?
-          <li>{contact.mail.replace(/@/, ' [at] ')}</li>
+          <li>Mail: {contact.mail.replace(/@/, ' [at] ')}</li>
         : ''}
         {contact.twitter ?
-          <li><a href={`https://twitter.com/${contact.twitter}`}>{contact.twitter}</a></li>
+          <li>Twitter: <a href={`https://twitter.com/${contact.twitter}`}>{contact.twitter}</a></li>
         : ''}
       </ul>
     );

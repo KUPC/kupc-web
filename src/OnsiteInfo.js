@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './OnsiteInfo.css'
+import ClassNames from 'classnames';
 
 class OnsiteInfo extends Component {
   render() {
     return (
-      <div className="OnsiteInfo">
+      <div className={ClassNames("OnsiteInfo", this.props.className)}>
         <div>
           <header>参加方法</header>
           <ol>
@@ -23,15 +24,15 @@ class OnsiteInfo extends Component {
             <li>
               <header>オンライン参加</header>
               <div>
-                <p>オンラインで参加される場合は事前申し込みは必要ございません.</p>
-                <p>AtCoder より直接ご参加下さい.</p>
+                <p>オンラインで参加される場合は事前申し込みは必要ございません</p>
+                <p>AtCoder より直接ご参加下さい</p>
               </div>
             </li>
           </ol>
         </div>
         <div>
           <header>連絡事項</header>
-          <div><p>会場には無線LANが使用可能なノートPCを持参してください.</p></div>
+          <div><p>会場には無線LANが使用可能なノートPCを持参してください</p></div>
         </div>
       </div>
     );

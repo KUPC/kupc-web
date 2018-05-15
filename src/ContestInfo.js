@@ -4,6 +4,7 @@ import OnsiteInfo from './OnsiteInfo';
 import Footer from './Footer';
 import Title from './Title';
 import Menu from './Menu';
+import ClassNames from 'classnames';
 
 class ContestInfo extends Component {
   isUpcomingContest() {
@@ -12,12 +13,12 @@ class ContestInfo extends Component {
   }
   render() {
     return (
-      <div className="ContestInfo">
+      <div>
         <Title suffix={this.props.data.suffix} />
         <Menu selectedKey={this.props.data.suffix} />
         {this.isUpcomingContest() ?
-          <UpcomingContestInfo data={this.props.data} />
-          : <OldContestInfo data={this.props.data} />
+          <UpcomingContestInfo data={this.props.data} className="ContestInfo" />
+          : <OldContestInfo data={this.props.data} className="ContestInfo" />
         }
       </div>
     );
@@ -29,11 +30,11 @@ class UpcomingContestInfo extends Component {
     const {suffix} = data;
     if ('date' in data) data.date = new Date(data.date);
     return (
-      <div className="OldContestInfo">
+      <div className={ClassNames("UpcomingContestInfo", this.props.className)}>
         {'date' in data ?
-          <div className="date">KUPC {suffix} は{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日に行われます.</div>
+          <div className="date"><p>KUPC {suffix} は <strong>{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日</strong> に行われます</p></div>
         : ''}
-        <OnsiteInfo data={data} />
+        <OnsiteInfo data={data} className={this.props.className} />
         {'links' in data ?
           <div className="links">
             <header>コンテストページ</header>
@@ -54,7 +55,7 @@ class UpcomingContestInfo extends Component {
         { 'staffs' in data ?
           <div className="staffs">
             <header>運営</header>
-            <div>KUPC {suffix} は京都大学の学生によって構成される以下のメンバーで運営されています.</div>
+            <div>KUPC {suffix} は京都大学の学生によって構成される以下のメンバーで運営されています</div>
             <ul className="staffs">
             { data.staffs.map(staffName =>
               <li key={staffName}>{staffName}</li>
@@ -95,9 +96,9 @@ class OldContestInfo extends Component {
     if ('date' in data) data.date = new Date(data.date);
     const editorials = this.getEditorials();
     return (
-      <div className="OldContestInfo">
+      <div className={ClassNames("OldContestInfo", this.props.className)}>
         {'date' in data ?
-          <div className="date">KUPC {suffix} は{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日に行われました.</div>
+          <div className="date"><p>KUPC {suffix} は {data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日 に行われました</p></div>
         : ''}
         {'links' in data ?
           <div className="links">
@@ -132,7 +133,7 @@ class OldContestInfo extends Component {
         { 'staffs' in data ?
           <div className="staffs">
             <header>運営</header>
-            <div>KUPC {suffix} は以下のメンバーで運営されました.</div>
+            <div>KUPC {suffix} は以下のメンバーで運営されました</div>
             <ul className="staffs">
             { data.staffs.map(staffName =>
               <li key={staffName}>{staffName}</li>

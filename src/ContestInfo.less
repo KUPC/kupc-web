@@ -1,0 +1,123 @@
+.ContestInfo {
+  > div {
+    text-align: center;
+    > header {
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 18px;
+      margin-bottom: 20px;
+      position: relative;
+      @line-color: hsl(0, 0%, 85%);
+      @line-width: 12vw;
+      &::before,
+      &::after {
+        content: '';
+        height: 1px;
+        width: @line-width;
+        position: absolute;
+        top: 50%;
+        background-color: @line-color;
+      }
+      &::before {
+        left: -@line-width;
+        background: linear-gradient(90deg, white, @line-color);
+      }
+      &::after {
+        left: 100%;
+        background: linear-gradient(90deg, @line-color, white);
+      }
+    }
+    p {
+      margin-left: 5px;
+    }
+  }
+  > div + div {
+    margin-top: 40px;
+  }
+}
+.links > ul {
+  @border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  > li {
+    width: 200px;
+    height: 60px;
+    transition: all .2s;
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      width: inherit;
+      height: inherit;
+    }
+    &:first-child {
+      border-top-left-radius: @border-radius;
+      border-bottom-left-radius: @border-radius;
+    }
+    &:last-child {
+      border-top-right-radius: @border-radius;
+      border-bottom-right-radius: @border-radius;
+    }
+    &:nth-child(1) {
+      background-color: hsl(220, 80%, 60%);
+      &:hover {
+        background-color: hsl(220, 80%, 53%);
+      }
+    }
+    &:nth-child(2) {
+      background-color: hsl(0, 70%, 60%);
+      &:hover {
+        background-color: hsl(0, 70%, 53%);
+      }
+    }
+    &:nth-child(3) {
+      background-color: hsl(145, 70%, 45%);
+      &:hover {
+        background-color: hsl(145, 70%, 38%);
+      }
+    }
+  }
+}
+.editorials > ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  // border-width: 1px 0;
+  // border-style: solid;
+  // border-color: hsl(0, 0%, 95%);
+  margin-top: -10px;
+  > li {
+    width: 240px;
+    height: 80px;
+    transition: all .2s;
+    margin: 15px;
+    border: 1px solid hsl(0, 0%, 80%);
+    box-shadow: 3px 3px 12px -8px hsl(0, 0%, 0%);
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: inherit;
+      color: black;
+      text-decoration: none;
+      padding: 7px;
+    }
+    &:hover {
+      background-color: hsl(0, 0%, 97%);
+    }
+  }
+}
+.staffs {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 10px;
+}

@@ -7,9 +7,8 @@ const Data = {
       suffix: '2018',
       // date: '2018-mm-dd',
       // links: [
-      //   { title: "KUPC2018", url: "http://kupc2017.contest.atcoder.jp/" },
+      //   { title: "コンテストページ", url: "http://kupc2017.contest.atcoder.jp/" },
       // ],
-      // judge_data: { url: '' },
       // problems: [
       //   { id: 'A', title: 'Credits' },
       //   { id: 'B', title: 'Camphor Tree' },
@@ -24,16 +23,15 @@ const Data = {
       //   { id: 'K', title: 'Xor Summation Pattern' },
       //   { id: 'L', title: 'Coin Game 2017' },
       // ],
-      staffs: ['加藤剛', '齋藤大聖', '眞田嵩大', '曽根 大雅', '高橋 昌大', '西川剛史', '脇坂 遼'],
+      staffs: ['加藤剛', '齋藤大聖', '眞田嵩大', '曽根大雅', '高橋昌大', '西川剛史', '脇坂遼'],
     },
     {
       component: ContestInfo,
       suffix: '2017',
       date: '2017-10-01',
       links: [
-        { title: "KUPC2017", url: "http://kupc2017.contest.atcoder.jp/" },
+        { title: "コンテストページ", url: "http://kupc2017.contest.atcoder.jp/" },
       ],
-      // judge_data: { url: '' },
       problems: [
         { id: 'A', title: 'Credits' },
         { id: 'B', title: 'Camphor Tree' },
@@ -55,9 +53,8 @@ const Data = {
       suffix: '2016',
       date: '2016-10-02',
       links: [
-        { title: "KUPC2016", url: "http://kupc2016.contest.atcoder.jp/" },
+        { title: "コンテストページ", url: "http://kupc2016.contest.atcoder.jp/" },
       ],
-      // judge_data: { url: '' },
       problems: [
         { id: 'A', title: 'バリケード / A Barricade' },
         { id: 'B', title: '作問委員会 / Problem Committee' },
@@ -78,9 +75,8 @@ const Data = {
       suffix: '2015',
       date: '2015-10-24',
       links: [
-        { title: "KUPC2015", url: "http://kupc2015.contest.atcoder.jp/" },
+        { title: "コンテストページ", url: "http://kupc2015.contest.atcoder.jp/" },
       ],
-      // judge_data: { url: '' },
       problems: [
         { id: 'A', title: '東京都' },
         { id: 'B', title: 'GUARDIANS' },
@@ -102,9 +98,9 @@ const Data = {
       suffix: '2014',
       date: '2014-07-05',
       links: [
-        { title: "KUPC2014", url: "http://kupc2014.contest.atcoder.jp/" },
+        { title: "コンテストページ", url: "http://kupc2014.contest.atcoder.jp/" },
+        { title: "ジャッジデータ", url: 'https://drive.google.com/file/d/0B_oiVeAwII2NSHc2X2Z6Yml4b0k/edit?usp=sharing' },
       ],
-      judge_data: { url: 'https://drive.google.com/file/d/0B_oiVeAwII2NSHc2X2Z6Yml4b0k/edit?usp=sharing' },
       problems: [
         { id: 'A', title: 'マッサージチェア' },
         { id: 'B', title: '数当てゲーム' },
@@ -126,9 +122,9 @@ const Data = {
       suffix: '2013',
       date: '2013-07-06',
       links: [
-        { title: "KUPC2013", url: "https://kupc2013.contest.atcoder.jp/" },
+        { title: "コンテストページ", url: "https://kupc2013.contest.atcoder.jp/" },
+        { title: "ジャッジデータ", url: 'https://docs.google.com/file/d/0B_oiVeAwII2NVnFhd2RuTzN4Z0U/edit?usp=sharing' },
       ],
-      judge_data: { url: 'https://docs.google.com/file/d/0B_oiVeAwII2NVnFhd2RuTzN4Z0U/edit?usp=sharing' },
       problems: [
         { id: 'A', title: '旧総合研究７号館' },
         { id: 'B', title: 'ライオン' },
@@ -151,8 +147,8 @@ const Data = {
       links: [
         { title: "練習セッション", url: "http://kupc2012pr.contest.atcoder.jp/" },
         { title: "コンテスト本番", url: "http://kupc2012.contest.atcoder.jp/" },
+        { title: "ジャッジデータ", url: 'https://docs.google.com/file/d/0B_oiVeAwII2NZkJJUHdMQ0Q0eHM/edit?usp=sharing' },
       ],
-      judge_data: { url: 'https://docs.google.com/file/d/0B_oiVeAwII2NZkJJUHdMQ0Q0eHM/edit?usp=sharing' },
       problems: [
         { id: 'A', title: 'アルデンテ' },
         { id: 'B', title: '簡易オセロ' },
