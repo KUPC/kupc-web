@@ -2,6 +2,7 @@
   "name": "kupc.github.com",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.kupc.jp/",
   "dependencies": {
     "classnames": "^2.2.5",
     "react": "^16.3.2",
