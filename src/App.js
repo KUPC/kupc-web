@@ -13,10 +13,10 @@ class App extends Component {
     return (
       <HashRouter>
         <Switch>
-          <Route exact path='/' render={() => this.makeComponent(Data.contest[0])} />} />
           {Data.contest.map(contest =>
-            <Route exact path={`/${contest.suffix}/`} key={contest.suffix} render={() => this.makeComponent(contest)} />
+            <Route path={`/${contest.suffix}/`} key={contest.suffix} render={() => this.makeComponent(contest)} />
           )}
+          <Route path='/' render={() => this.makeComponent(Data.contest[0])} />} />
           <Route path='*' component={NotFound} />
         </Switch>
       </HashRouter>
