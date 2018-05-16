@@ -1,38 +1,84 @@
+.SideLineHeader(@line-color, @line-width) {
+  display: inline-block;
+  padding: 5px 10px;
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    width: @line-width;
+    position: absolute;
+    top: 50%;
+    background-color: @line-color;
+  }
+  &::before {
+    left: -@line-width;
+    background: linear-gradient(90deg, white, @line-color);
+  }
+  &::after {
+    left: 100%;
+    background: linear-gradient(90deg, @line-color, white);
+  }
+}
+.Stripe(@color, @size) {
+  @color2: white;
+  background-color: @color;
+  background-image: linear-gradient(
+    -45deg,
+    @color2 25%,
+    @color 25%, @color 50%,
+    @color2 50%, @color2 75%,
+    @color 75%, @color
+  );
+  background-size: @size @size;
+}
 .ContestInfo {
   > div {
     text-align: center;
     > header {
-      display: inline-block;
-      padding: 5px 10px;
       font-size: 18px;
       margin-bottom: 20px;
       position: relative;
-      @line-color: hsl(160, 60%, 50%);
-      @line-width: 12vw;
-      &::before,
-      &::after {
-        content: '';
-        height: 1px;
-        width: @line-width;
-        position: absolute;
-        top: 50%;
-        background-color: @line-color;
-      }
-      &::before {
-        left: -@line-width;
-        background: linear-gradient(90deg, white, @line-color);
-      }
-      &::after {
-        left: 100%;
-        background: linear-gradient(90deg, @line-color, white);
-      }
     }
     p {
       margin-left: 5px;
     }
+    padding-bottom: 40px;
   }
-  > div + div {
-    margin-top: 40px;
+  > .date {
+    padding-bottom: 10px;
+  }
+}
+.UpcomingContestInfo {
+  > div > header {
+    .SideLineHeader(hsl(160, 60%, 50%), 12vw);
+  }
+}
+.OldContestInfo {
+  > * > header {
+    // color: white;
+    padding: 5px 0;
+    .SideLineHeader(hsl(160, 60%, 50%), 12vw);
+  }
+  > .links {
+    // background-color: hsl(150, 60%, 96%);
+  //   .Stripe(hsl(150, 70%, 93%), 3px);
+  //   > header {
+  //     background-color: hsl(150, 60%, 40%);
+  //   }
+  }
+  > .editorials {
+      // background-color: hsl(0, 65%, 96%);
+  //   .Stripe(hsl(260, 70%, 93%), 3px);
+  //   > header {
+  //     background-color: hsl(260, 65%, 50%);
+  //   }
+  }
+  > .staffs {
+      // background-color: hsl(260, 65%, 96%);
+  //   .Stripe(hsl(0, 0%, 93%), 3px);
+  //   > header {
+  //     background-color: hsl(0, 0%, 50%);
+  //   }
   }
 }
 .links > ul {
@@ -99,6 +145,7 @@
     transition: all .2s;
     margin: 15px;
     border: 1px solid hsl(0, 0%, 80%);
+    background-color: white;
     box-shadow: 3px 3px 12px -8px hsl(0, 0%, 0%);
     > a {
       display: flex;
@@ -111,11 +158,12 @@
       padding: 7px;
     }
     &:hover {
-      background-color: hsl(0, 0%, 97%);
+      border-color: hsl(260, 60%, 90%);
+      background-color: hsl(260, 60%, 98%);
     }
   }
 }
-.staffs {
+.staffList {
   list-style: none;
   margin: 0;
   padding-left: 0;

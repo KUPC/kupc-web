@@ -34,12 +34,13 @@ class UpcomingContestInfo extends Component {
     const data = this.props.data;
     const {suffix} = data;
     if ('date' in data) data.date = new Date(data.date);
+    const classes = ClassNames("UpcomingContestInfo", this.props.className);
     return (
-      <div className={ClassNames("UpcomingContestInfo", this.props.className)}>
+      <div className={classes}>
         {'date' in data ?
           <div className="date"><p>KUPC {suffix} は <strong>{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日</strong> に行われます</p></div>
         : ''}
-        <OnsiteInfo data={data} className={this.props.className} />
+        <OnsiteInfo data={data} className={classes} />
         {'links' in data ?
           <div className="links">
             <header>コンテストページ</header>
@@ -61,7 +62,7 @@ class UpcomingContestInfo extends Component {
           <div className="staffs">
             <header>運営</header>
             <div>KUPC {suffix} は京都大学の学生によって構成される以下のメンバーで運営されています</div>
-            <ul className="staffs">
+            <ul className="staffList">
             { data.staffs.map(staffName =>
               <li key={staffName}>{staffName}</li>
             )}
@@ -85,13 +86,13 @@ class OldContestInfo extends Component {
     const res = [];
     // summary
     const summaryPdf = this.tryGetEditorial('summary.pdf');
-    if (summaryPdf) res.push({ id: 'summary', title: '講評', url: summaryPdf });
+    if (summaryPdf) res.push({ id: 'summary', title: '総評', url: summaryPdf, className: "summary" });
     // problem editorials
     const {problems} = this.props.data;
     if (problems) {
       for (const {id, title} of problems) {
         const probPdf = this.tryGetEditorial(`${id}.pdf`);
-        if (probPdf) res.push({ id: `prob${id}`, title: `${id}: ${title}`, url: probPdf });
+        if (probPdf) res.push({ id: `prob${id}`, title: `${id}: ${title}`, url: probPdf, className: "editorial" });
       }
     }
     return res;
@@ -127,8 +128,8 @@ class OldContestInfo extends Component {
           <header>解説</header>
           { editorials.length > 0 ?
             <ul>
-              {editorials.map(({id, title, url}) =>
-                  <li key={id}><a href={url}>
+              {editorials.map(({id, title, url, className}) =>
+                  <li key={id} className={className}><a href={url}>
                     {title}
                   </a></li>
               )}
@@ -140,7 +141,7 @@ class OldContestInfo extends Component {
           <div className="staffs">
             <header>運営</header>
             <div>KUPC {suffix} は以下のメンバーで運営されました</div>
-            <ul className="staffs">
+            <ul className="staffList">
             { data.staffs.map(staffName =>
               <li key={staffName}>{staffName}</li>
             )}
