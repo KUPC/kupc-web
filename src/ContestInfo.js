@@ -63,6 +63,7 @@ class UpcomingContestInfo extends Component {
             </ul>
           </div>
         : ''}
+        <Footer />
       </div>
     );
   }
