@@ -2,35 +2,36 @@ import ContestInfo from './ContestInfo';
 
 const Data = {
   contest: [
-    {
-      component: ContestInfo,
-      suffix: '2018',
-      // date: '2018-mm-dd',
-      // links: [
-      //   { title: "コンテストページ", url: "http://kupc2017.contest.atcoder.jp/" },
-      // ],
-      // problems: [
-      //   { id: 'A', title: 'Credits' },
-      //   { id: 'B', title: 'Camphor Tree' },
-      //   { id: 'C', title: 'Best Password' },
-      //   { id: 'D', title: 'Sanmoku' },
-      //   { id: 'E', title: 'Treasure Hunt' },
-      //   { id: 'F', title: '575' },
-      //   { id: 'G', title: 'encode/decode 2017' },
-      //   { id: 'H', title: 'Make a Potion' },
-      //   { id: 'I', title: 'Activate It!!' },
-      //   { id: 'J', title: 'Paint Red and Make Graph' },
-      //   { id: 'K', title: 'Xor Summation Pattern' },
-      //   { id: 'L', title: 'Coin Game 2017' },
-      // ],
-      staffs: ['加藤剛', '齋藤大聖', '眞田嵩大', '曽根大雅', '高橋昌大', '西川剛史', '脇坂遼'],
-    },
+    // {
+    //   component: ContestInfo,
+    //   suffix: '2018',
+    //   // date: '2018-mm-dd',
+    //   // links: [
+    //   //   { title: "コンテストページ", url: "http://kupc2017.contest.atcoder.jp/" },
+    //   // ],
+    //   // problems: [
+    //   //   { id: 'A', title: 'Credits' },
+    //   //   { id: 'B', title: 'Camphor Tree' },
+    //   //   { id: 'C', title: 'Best Password' },
+    //   //   { id: 'D', title: 'Sanmoku' },
+    //   //   { id: 'E', title: 'Treasure Hunt' },
+    //   //   { id: 'F', title: '575' },
+    //   //   { id: 'G', title: 'encode/decode 2017' },
+    //   //   { id: 'H', title: 'Make a Potion' },
+    //   //   { id: 'I', title: 'Activate It!!' },
+    //   //   { id: 'J', title: 'Paint Red and Make Graph' },
+    //   //   { id: 'K', title: 'Xor Summation Pattern' },
+    //   //   { id: 'L', title: 'Coin Game 2017' },
+    //   // ],
+    //   staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '高橋 昌大', '西川 剛史', '松本 和彦', '脇坂 遼'],
+    // },
     {
       component: ContestInfo,
       suffix: '2017',
       date: '2017-10-01',
       links: [
         { title: "コンテストページ", url: "http://kupc2017.contest.atcoder.jp/" },
+        { title: "ジャッジデータ", url: "https://drive.google.com/open?id=1RY-LWXIxZyXS-X1ZqHn5IBdxSWlh6mS4" },
       ],
       problems: [
         { id: 'A', title: 'Credits' },
@@ -171,8 +172,8 @@ const Data = {
       links: [
         { title: "練習セッション", url: "http://old.atcoder.jp/contest/detail/16" },
         { title: "コンテスト本番", url: "http://old.atcoder.jp/contest/17/detail" },
+        { title: "ジャッジデータ", url: "https://docs.google.com/file/d/0B_oiVeAwII2NclNNUGZfc2hyTTA/edit?usp=sharing" },
       ],
-      judge_data: { url: "https://docs.google.com/file/d/0B_oiVeAwII2NclNNUGZfc2hyTTA/edit?usp=sharing" },
       problems: [
         { id: 'A', title: 'KUPC' },
         { id: 'B', title: '蝉' },

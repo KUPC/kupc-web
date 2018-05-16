@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Title from './Title';
 import Menu from './Menu';
 import ClassNames from 'classnames';
+import DocumentTitle from 'react-document-title';
 
 class ContestInfo extends Component {
   isUpcomingContest() {
@@ -12,15 +13,19 @@ class ContestInfo extends Component {
     return new Date().setHours(0, 0, 0, 0) <= new Date(this.props.data.date).setHours(0, 0, 0, 0);
   }
   render() {
+    const data = this.props.data;
+    const {suffix} = data;
     return (
-      <div>
-        <Title suffix={this.props.data.suffix} />
-        <Menu selectedKey={this.props.data.suffix} />
-        {this.isUpcomingContest() ?
-          <UpcomingContestInfo data={this.props.data} className="ContestInfo" />
-          : <OldContestInfo data={this.props.data} className="ContestInfo" />
-        }
-      </div>
+      <DocumentTitle title={`京都大学プログラミングコンテスト ${suffix}`}>
+        <div>
+          <Title suffix={suffix} />
+          <Menu selectedKey={suffix} />
+          {this.isUpcomingContest() ?
+            <UpcomingContestInfo data={data} className="ContestInfo" />
+            : <OldContestInfo data={data} className="ContestInfo" />
+          }
+        </div>
+      </DocumentTitle>
     );
   }
 }
