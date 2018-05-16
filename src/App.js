@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import Data from './data';
 import NotFound from './NotFound';
 import ContestInfo from './ContestInfo';
@@ -11,7 +11,7 @@ class App extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact path='/' render={() => this.makeComponent(Data.contest[0])} />} />
           {Data.contest.map(contest =>
@@ -19,7 +19,7 @@ class App extends Component {
           )}
           <Route path='*' component={NotFound} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
