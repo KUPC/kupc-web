@@ -19,6 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "serve": "bundle exec jekyll serve -s build",
     "build-css": "less-watch-compiler --run-once src src",
     "watch-less": "npm run build-css && less-watch-compiler src src"
   },
