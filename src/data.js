@@ -170,8 +170,8 @@ const Data = {
       suffix: '2011',
       date: '2011-08-06',
       links: [
-        { title: "練習セッション", url: "http://old.atcoder.jp/contest/detail/16" },
-        { title: "コンテスト本番", url: "http://old.atcoder.jp/contest/17/detail" },
+        // { title: "練習セッション", url: "http://old.atcoder.jp/contest/detail/16" },
+        // { title: "コンテスト本番", url: "http://old.atcoder.jp/contest/17/detail" },
         { title: "ジャッジデータ", url: "https://docs.google.com/file/d/0B_oiVeAwII2NclNNUGZfc2hyTTA/edit?usp=sharing" },
       ],
       problems: [
