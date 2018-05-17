@@ -14,6 +14,19 @@ npm install
 基本的には, `rect-dev` ブランチの `src/data.js`, `src/OnsiteInfo.js`, `src/OnsiteInfo.less` を編集してください \
 `npm start` を叩くと, http://localhost:3000/ でプレビューできます
 
+deploy後のページをプレビューしたい場合がもしあれば, [このページ](Setting up your GitHub Pages site locally with Jekyll
+)の通りに
+```
+gem install bundler
+bundle install
+```
+としてセットアップした後,
+```
+npm run build
+npm run serve
+```
+により http://localhost:4000/ で閲覧できます
+
 
 ## Test
 `npm test` を叩くと, `src` 以下にある `*.test.js` が実行されます \
