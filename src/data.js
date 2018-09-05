@@ -16,7 +16,7 @@ const Data = {
     //   contest_page: "https://beta.atcoder.jp/contests/kupc2018/",
     //   atnd_tokyo: "",
     //   atnd_kyoto: "",
-    //   staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '高橋 昌大', '西川 剛史', '松本 和彦', '脇坂 遼'],
+    //   staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '西川 剛史', '松本 和彦', '脇坂 遼'],
     // },
     {
       component: ContestInfo,
@@ -25,7 +25,7 @@ const Data = {
       url_open_contest: "https://beta.atcoder.jp/contests/kupc2018/",
       url_atnd_tokyo: "https://atnd.org/events/100119",
       url_atnd_kyoto: "https://atnd.org/events/100105",
-      staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '高橋 昌大', '西川 剛史', '松本 和彦', '脇坂 遼'],
+      staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '西川 剛史', '松本 和彦', '脇坂 遼'],
     },
     {
       component: ContestInfo,
