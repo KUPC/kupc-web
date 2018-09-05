@@ -1,30 +1,32 @@
 import ContestInfo from './ContestInfo';
 
+/*
+[component: ContestInfo]
+problems が undefined である場合 UpcomingContest として扱われる
+その場合, contest_link_index,
+*/
+
 const Data = {
   contest: [
+    // template for onsite page
     // {
     //   component: ContestInfo,
     //   suffix: '2018',
-    //   // date: '2018-mm-dd',
-    //   // links: [
-    //   //   { title: "コンテストページ", url: "http://kupc2017.contest.atcoder.jp/" },
-    //   // ],
-    //   // problems: [
-    //   //   { id: 'A', title: 'Credits' },
-    //   //   { id: 'B', title: 'Camphor Tree' },
-    //   //   { id: 'C', title: 'Best Password' },
-    //   //   { id: 'D', title: 'Sanmoku' },
-    //   //   { id: 'E', title: 'Treasure Hunt' },
-    //   //   { id: 'F', title: '575' },
-    //   //   { id: 'G', title: 'encode/decode 2017' },
-    //   //   { id: 'H', title: 'Make a Potion' },
-    //   //   { id: 'I', title: 'Activate It!!' },
-    //   //   { id: 'J', title: 'Paint Red and Make Graph' },
-    //   //   { id: 'K', title: 'Xor Summation Pattern' },
-    //   //   { id: 'L', title: 'Coin Game 2017' },
-    //   // ],
+    //   date: '2018-09-30',
+    //   contest_page: "https://beta.atcoder.jp/contests/kupc2018/",
+    //   atnd_tokyo: "",
+    //   atnd_kyoto: "",
     //   staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '高橋 昌大', '西川 剛史', '松本 和彦', '脇坂 遼'],
     // },
+    {
+      component: ContestInfo,
+      suffix: '2018',
+      date: '2018-09-30',
+      url_open_contest: "https://beta.atcoder.jp/contests/kupc2018/",
+      url_atnd_tokyo: "https://atnd.org/events/100119",
+      url_atnd_kyoto: "https://atnd.org/events/100105",
+      staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '高橋 昌大', '西川 剛史', '松本 和彦', '脇坂 遼'],
+    },
     {
       component: ContestInfo,
       suffix: '2017',

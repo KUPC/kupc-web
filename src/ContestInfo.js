@@ -9,8 +9,7 @@ import DocumentTitle from 'react-document-title';
 
 class ContestInfo extends Component {
   isUpcomingContest() {
-    if (!this.props.data.date) return true;
-    return new Date().setHours(0, 0, 0, 0) <= new Date(this.props.data.date).setHours(0, 0, 0, 0);
+    return !('problems' in this.props.data);
   }
   render() {
     const data = this.props.data;
@@ -38,7 +37,7 @@ class UpcomingContestInfo extends Component {
     return (
       <div className={classes}>
         {'date' in data ?
-          <div className="date"><p>KUPC {suffix} は <strong>{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日</strong> に行われます</p></div>
+          <div className="date"><p>KUPC{suffix} は <strong>{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日</strong> に行われます</p></div>
         : ''}
         <OnsiteInfo data={data} className={classes} />
         {'links' in data ?
@@ -49,7 +48,7 @@ class UpcomingContestInfo extends Component {
                 <li key={link.url}>
                   <a href={link.url}>
                     {link.icon ?
-                      <img src={link.icon} />
+                      <img src={link.icon} alt="" />
                     : ''}
                     <div>{link.title}</div>
                   </a>
@@ -105,7 +104,7 @@ class OldContestInfo extends Component {
     return (
       <div className={ClassNames("OldContestInfo", this.props.className)}>
         {'date' in data ?
-          <div className="date"><p>KUPC {suffix} は {data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日 に行われました</p></div>
+          <div className="date"><p>KUPC{suffix} は {data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日 に行われました</p></div>
         : ''}
         {'links' in data ?
           <div className="links">
@@ -115,7 +114,7 @@ class OldContestInfo extends Component {
                 <li key={link.url}>
                   <a href={link.url}>
                     {link.icon ?
-                      <img src={link.icon} />
+                      <img src={link.icon} alt="" />
                     : ''}
                     <div>{link.title}</div>
                   </a>
