@@ -16,15 +16,15 @@
     "client": "react-scripts start",
     "deploy": "npm run build && npm run deploy-without-build",
     "deploy-without-build": "gh-pages -m '[AUTO] [ci skip] Update' -d build",
-    "build": "react-scripts build",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "serve": "bundle exec jekyll serve -s build",
+    "serve": "serve -s build",
     "build-css": "less-watch-compiler --run-once src src",
     "watch-less": "npm run build-css && less-watch-compiler src src"
   },
   "devDependencies": {
-    "concurrently": "^3.5.1",
+    "concurrently": "^3.6.1",
     "gh-pages": "^1.1.0",
     "less-watch-compiler": "^1.11.3"
   },
