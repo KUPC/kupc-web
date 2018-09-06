@@ -5,7 +5,9 @@ class Title extends Component {
   render() {
     return (
       <header className="Title">
-        京都大学プログラミングコンテスト {this.props.suffix}
+        <h1>
+          京都大学プログラミングコンテスト {this.props.suffix}
+        </h1>
       </header>
     );
   }
