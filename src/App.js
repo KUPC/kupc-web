@@ -13,7 +13,7 @@ class App extends Component {
       <HashRouter>
         <Switch>
           {Data.contest.map(contest =>
-            <Route path={`/${contest.suffix}`} key={contest.suffix} render={() => this.makeComponent(contest)} />
+            <Route exact path={`/${contest.suffix}`} key={contest.suffix} render={() => this.makeComponent(contest)} />
           )}
           <Route path='*' render={() => this.makeComponent(Data.contest[0])} />} />
         </Switch>
