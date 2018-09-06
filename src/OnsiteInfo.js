@@ -33,7 +33,7 @@ class OnsiteInfo extends Component {
             <li>
               <header>オンライン参加</header>
               <div>
-                <p>オンラインで参加される場合は事前申し込みは必要ございません</p>
+                <p>オンライン参加の場合、事前申し込みの必要はございません</p>
                 <p><a href={data.url_open_contest}>コンテストページ</a> より直接ご参加下さい</p>
               </div>
             </li>

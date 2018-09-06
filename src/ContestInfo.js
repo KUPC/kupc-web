@@ -36,9 +36,12 @@ class UpcomingContestInfo extends Component {
     const classes = ClassNames("UpcomingContestInfo", this.props.className);
     return (
       <div className={classes}>
-        {'date' in data ?
-          <div className="date"><p>KUPC{suffix} は <strong>{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日</strong> に行われます</p></div>
-        : ''}
+        <div className="header">
+          <p>京都大学プログラミングコンテスト(KUPC)は京都大学の学生が有志で主催するプログラミングコンテストです</p>
+          {'date' in data ?
+            <p>KUPC{suffix} は <strong>{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日</strong> に行われます</p>
+          : ''}
+        </div>
         <OnsiteInfo data={data} className={classes} />
         {'links' in data ?
           <div className="links">
