@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Redirect, Switch, Route } from 'react-router-dom'
 import Data from './data';
 import NotFound from './NotFound';
 import './App.css';
@@ -13,10 +13,9 @@ class App extends Component {
       <HashRouter>
         <Switch>
           {Data.contest.map(contest =>
-            <Route path={`/${contest.suffix}/`} key={contest.suffix} render={() => this.makeComponent(contest)} />
+            <Route path={`/${contest.suffix}`} key={contest.suffix} render={() => this.makeComponent(contest)} />
           )}
-          <Route path='/' render={() => this.makeComponent(Data.contest[0])} />} />
-          <Route path='*' component={NotFound} />
+          <Route path='*' render={() => this.makeComponent(Data.contest[0])} />} />
         </Switch>
       </HashRouter>
     );
