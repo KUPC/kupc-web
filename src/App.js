@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Redirect, Switch, Route } from 'react-router-dom'
 import Data from './data';
-import NotFound from './NotFound';
 import './App.css';
 
 class App extends Component {
