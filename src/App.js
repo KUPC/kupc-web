@@ -14,7 +14,7 @@ class App extends Component {
           {Data.contest.map(contest =>
             <Route exact path={`/${contest.suffix}`} key={contest.suffix} render={() => this.makeComponent(contest)} />
           )}
-          <Route path='*' render={() => this.makeComponent(Data.contest[0])} />} />
+          <Route path='*' render={() => <Redirect to={`/${Data.contest[0].suffix}/`} />} />
         </Switch>
       </HashRouter>
     );
