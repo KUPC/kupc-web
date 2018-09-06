@@ -1,3 +1,14 @@
+h3 {
+  padding: 5px 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.3em;
+  position: relative;
+  .SideLineHeader(hsl(160, 60%, 50%), 12vw);
+}
+p {
+  padding: 0 5px;
+}
 .SideLineHeader(@line-color, @line-width) {
   display: inline-block;
   padding: 5px 10px;
@@ -34,14 +45,6 @@
 .ContestInfo {
   > div {
     text-align: center;
-    > header {
-      font-size: 1.3em;
-      margin-bottom: 20px;
-      position: relative;
-    }
-    p {
-      margin-left: 5px;
-    }
     padding-bottom: 40px;
   }
   > .date {
@@ -49,16 +52,11 @@
   }
 }
 .UpcomingContestInfo {
-  > div > header {
-    .SideLineHeader(hsl(160, 60%, 50%), 12vw);
+  h3 {
+    margin-bottom: 20px;
   }
 }
 .OldContestInfo {
-  > * > header {
-    // color: white;
-    padding: 5px 0;
-    .SideLineHeader(hsl(160, 60%, 50%), 12vw);
-  }
   > .links {
     // background-color: hsl(150, 60%, 96%);
   //   .Stripe(hsl(150, 70%, 93%), 3px);

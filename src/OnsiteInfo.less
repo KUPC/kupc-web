@@ -1,3 +1,6 @@
+h4 {
+  margin: 0;
+}
 .Stripe(@color, @size) {
   @color2: white;
   background-color: @color;
@@ -19,7 +22,7 @@
     padding-left: 0;
     > li {
       padding-bottom: 5px;
-      > header {
+      > h4 {
         padding: 5px 0;
         font-size: 18px;
         color: white;
@@ -27,13 +30,13 @@
     }
     > li:first-child {
       .Stripe(hsl(0, 60%, 93%), 3px);
-      > header {
+      > h4 {
         background-color: hsl(0, 50%, 45%);
       }
     }
     > li:last-child {
       .Stripe(hsl(230, 60%, 93%), 3px);
-      > header {
+      > h4 {
         background-color: hsl(230, 50%, 45%);
       }
     }

@@ -9,10 +9,10 @@ class OnsiteInfo extends Component {
     return (
       <div className={ClassNames("OnsiteInfo", this.props.className)}>
         <div className="participate">
-          <header>参加方法</header>
+          <h3>参加方法</h3>
           <ol>
             <li>
-              <header>会場参加</header>
+              <h4>会場参加</h4>
               <div>
                 <p>オンサイト会場は東京会場と京都会場がございます</p>
                 <p>ATNDにて参加を受け付けておりますので、以下のリンクから参加登録をお願いします</p>
@@ -31,7 +31,7 @@ class OnsiteInfo extends Component {
               </div>
             </li>
             <li>
-              <header>オンライン参加</header>
+              <h4>オンライン参加</h4>
               <div>
                 <p>オンライン参加の場合、事前申し込みの必要はございません</p>
                 <p><a href={data.url_open_contest}>コンテストページ</a> より直接ご参加下さい</p>

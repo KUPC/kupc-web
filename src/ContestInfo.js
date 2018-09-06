@@ -45,7 +45,7 @@ class UpcomingContestInfo extends Component {
         <OnsiteInfo data={data} className={classes} />
         {'links' in data ?
           <div className="links">
-            <header>コンテストページ</header>
+            <h3>コンテストページ</h3>
             <ul>
               {data.links.map(link =>
                 <li key={link.url}>
@@ -62,7 +62,7 @@ class UpcomingContestInfo extends Component {
         : ''}
         { 'staffs' in data ?
           <div className="staffs">
-            <header>運営</header>
+            <h3>運営</h3>
             <div>KUPC {suffix} は京都大学の学生によって構成される以下のメンバーで運営されています</div>
             <ul className="staffList">
             { data.staffs.map(staffName =>
@@ -111,7 +111,7 @@ class OldContestInfo extends Component {
         : ''}
         {'links' in data ?
           <div className="links">
-            <header>問題・結果</header>
+            <h3>問題・結果</h3>
             <ul>
               {data.links.map(link =>
                 <li key={link.url}>
@@ -127,7 +127,7 @@ class OldContestInfo extends Component {
           </div>
         : ''}
         <div className="editorials">
-          <header>解説</header>
+          <h3>解説</h3>
           { editorials.length > 0 ?
             <ul>
               {editorials.map(({id, title, url, className}) =>
@@ -141,7 +141,7 @@ class OldContestInfo extends Component {
         </div>
         { 'staffs' in data ?
           <div className="staffs">
-            <header>運営</header>
+            <h3>運営</h3>
             <div>KUPC {suffix} は以下のメンバーで運営されました</div>
             <ul className="staffList">
             { data.staffs.map(staffName =>
