@@ -1,0 +1,169 @@
+h3 {
+  padding: 5px 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.3em;
+  position: relative;
+  .SideLineHeader(hsl(160, 60%, 50%), 12vw);
+}
+p {
+  padding: 0 5px;
+}
+.SideLineHeader(@line-color, @line-width) {
+  display: inline-block;
+  padding: 5px 10px;
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    width: @line-width;
+    position: absolute;
+    top: 50%;
+    background-color: @line-color;
+  }
+  &::before {
+    left: -@line-width;
+    background: linear-gradient(90deg, white, @line-color);
+  }
+  &::after {
+    left: 100%;
+    background: linear-gradient(90deg, @line-color, white);
+  }
+}
+.Stripe(@color, @size) {
+  @color2: white;
+  background-color: @color;
+  background-image: linear-gradient(
+    -45deg,
+    @color2 25%,
+    @color 25%, @color 50%,
+    @color2 50%, @color2 75%,
+    @color 75%, @color
+  );
+  background-size: @size @size;
+}
+.ContestInfo {
+  > div {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  > .date {
+    padding-bottom: 10px;
+  }
+}
+.UpcomingContestInfo {
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+.OldContestInfo {
+  > .links {
+    // background-color: hsl(150, 60%, 96%);
+  //   .Stripe(hsl(150, 70%, 93%), 3px);
+  //   > header {
+  //     background-color: hsl(150, 60%, 40%);
+  //   }
+  }
+  > .editorials {
+      // background-color: hsl(0, 65%, 96%);
+  //   .Stripe(hsl(260, 70%, 93%), 3px);
+  //   > header {
+  //     background-color: hsl(260, 65%, 50%);
+  //   }
+  }
+  > .staffs {
+      // background-color: hsl(260, 65%, 96%);
+  //   .Stripe(hsl(0, 0%, 93%), 3px);
+  //   > header {
+  //     background-color: hsl(0, 0%, 50%);
+  //   }
+  }
+}
+.links > ul {
+  @border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  > li {
+    width: 200px;
+    height: 60px;
+    transition: all .2s;
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      width: inherit;
+      height: inherit;
+    }
+    &:first-child {
+      border-top-left-radius: @border-radius;
+      border-bottom-left-radius: @border-radius;
+    }
+    &:last-child {
+      border-top-right-radius: @border-radius;
+      border-bottom-right-radius: @border-radius;
+    }
+    &:nth-child(1) {
+      background-color: hsl(220, 80%, 60%);
+      &:hover {
+        background-color: hsl(220, 80%, 53%);
+      }
+    }
+    &:nth-child(2) {
+      background-color: hsl(0, 70%, 60%);
+      &:hover {
+        background-color: hsl(0, 70%, 53%);
+      }
+    }
+    &:nth-child(3) {
+      background-color: hsl(145, 70%, 45%);
+      &:hover {
+        background-color: hsl(145, 70%, 38%);
+      }
+    }
+  }
+}
+.editorials > ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  // border-width: 1px 0;
+  // border-style: solid;
+  // border-color: hsl(0, 0%, 95%);
+  margin-top: -10px;
+  > li {
+    width: 240px;
+    height: 80px;
+    transition: all .2s;
+    margin: 15px;
+    border: 1px solid hsl(0, 0%, 80%);
+    background-color: white;
+    box-shadow: 3px 3px 12px -8px hsl(0, 0%, 0%);
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: inherit;
+      color: black;
+      text-decoration: none;
+      padding: 7px;
+    }
+    &:hover {
+      border-color: hsl(260, 60%, 90%);
+      background-color: hsl(260, 60%, 98%);
+    }
+  }
+}
+.staffList {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 10px;
+}
