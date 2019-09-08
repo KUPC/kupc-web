@@ -29,6 +29,15 @@ const Data = {
     // },
     {
       component: ContestInfo,
+      suffix: '2019',
+      date: '2019-10-13',
+      url_open_contest: "https://atcoder.jp/contests/kupc2019",
+      url_atnd_tokyo: "https://atnd.org/events/108457",
+      url_atnd_kyoto: "https://atnd.org/events/108474",
+      staffs: ['加藤 剛', '角野 祐弥', '齋藤 大聖', '曽根 大雅', '中野 瑛一', '西川 剛史', '増田 舜大', '松本 和彦', '森 順平', '山岡 宙太', '山崎 宏紀', '脇坂 遼'],
+    },
+    {
+      component: ContestInfo,
       suffix: '2018',
       date: '2018-09-30',
       links: [
