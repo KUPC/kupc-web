@@ -29,6 +29,17 @@ const Data = {
     // },
     {
       component: ContestInfo,
+      suffix: '2020 春',
+      date: '2020-03-20',
+      online_only: true,
+      url_open_contest: 'https://onlinejudge.u-aizu.ac.jp/beta/room.html#KUPC2020Spring/info',
+      links: [
+        { title: "コンテストページ", url: "https://onlinejudge.u-aizu.ac.jp/beta/room.html#KUPC2020Spring/info" },
+      ],
+      staffs: ['大森 智仁', '加藤 剛', '角野 祐弥', '曽根 大雅', '中野 瑛一', '西川 剛史', '増田 舜大', '松本 和彦', '森 順平', '山岡 宙太', '山崎 宏紀', '脇坂 遼'],
+    },
+    {
+      component: ContestInfo,
       suffix: '2019',
       date: '2019-10-13',
       links: [
