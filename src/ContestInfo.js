@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './ContestInfo.css'
+import './OnlineInfo.css'
 import OnsiteInfo from './OnsiteInfo';
+import OnlineInfo from './OnlineInfo';
 import Footer from './Footer';
 import Title from './Title';
 import Menu from './Menu';
@@ -42,7 +44,10 @@ class UpcomingContestInfo extends Component {
             <p>KUPC{suffix} は <strong>{data.date.getFullYear()}年{data.date.getMonth()+1}月{data.date.getDate()}日</strong> に行われます</p>
           : ''}
         </div>
-        <OnsiteInfo data={data} className={classes} />
+        {'online_only' in data && data.online_only === true ?
+           <OnlineInfo data={data} className={classes} />
+         : <OnsiteInfo data={data} className={classes} />
+        }
         {'links' in data ?
           <div className="links">
             <h3>コンテストページ</h3>
