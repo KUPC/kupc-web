@@ -28,6 +28,17 @@ const Data = {
     //   staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '西川 剛史', '松本 和彦', '脇坂 遼'],
     // },
     {
+        component: ContestInfo,
+        suffix: '2020',
+        date: '2020-10-10',
+        online_only: true,
+        links: [
+            { title: "コンテストページ", url: "https://atcoder.jp/contests/kupc2020/" },
+        ],
+        staffs: ['大森 智仁', '加藤 剛', '角野 祐弥', '曽根 大雅', '中野 瑛一', '松本 和彦', '森 順平', '山岡 宙太', '山崎 宏紀', '脇坂 遼'],
+    },
+
+    {
       component: ContestInfo,
       suffix: '2020 春',
       date: '2020-03-20',
