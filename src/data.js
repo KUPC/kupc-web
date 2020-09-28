@@ -11,22 +11,28 @@ const Data = {
     // template for onsite page
     // {
     //   component: ContestInfo,
-    //   suffix: '2018',
-    //   date: '2018-09-30',
-    //   contest_page: "https://beta.atcoder.jp/contests/kupc2018/",
-    //   atnd_tokyo: "",
-    //   atnd_kyoto: "",
-    //   staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '西川 剛史', '松本 和彦', '脇坂 遼'],
+    //   suffix: '2020',
+    //   date: '2020-10-10',
+    //   onsite_only: false,
+    //   links: [
+    //       { title: "コンテストページ", url: "https://atcoder.jp/contests/kupc2020/" },
+    //   ],
+    //   problems: [
+    //       { id: 'A', title: 'Problem A' },
+    //   ],
+    //   staffs: [],
     // },
-    // {
-    //   component: ContestInfo,
-    //   suffix: '2018',
-    //   date: '2018-09-30',
-    //   url_open_contest: "https://beta.atcoder.jp/contests/kupc2018/",
-    //   url_atnd_tokyo: "https://atnd.org/events/100119",
-    //   url_atnd_kyoto: "https://atnd.org/events/100105",
-    //   staffs: ['加藤 剛', '齋藤 大聖', '眞田 嵩大', '曽根 大雅', '西川 剛史', '松本 和彦', '脇坂 遼'],
-    // },
+    {
+        component: ContestInfo,
+        suffix: '2020',
+        date: '2020-10-10',
+        online_only: true,
+        links: [
+            { title: "コンテストページ", url: "https://atcoder.jp/contests/kupc2020/" },
+        ],
+        staffs: ['大森 智仁', '加藤 剛', '角野 祐弥', '曽根 大雅', '中野 瑛一', '松本 和彦', '森 順平', '山岡 宙太', '山崎 宏紀', '脇坂 遼'],
+    },
+
     {
       component: ContestInfo,
       suffix: '2020 春',
