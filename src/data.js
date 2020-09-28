@@ -18,10 +18,9 @@ const Data = {
     //       { title: "コンテストページ", url: "https://atcoder.jp/contests/kupc2020/" },
     //   ],
     //   problems: [
-    //       { id: 'A', title: 'チーム作り' },
-    //       { id: 'B', title: 'サイコロを転がさないで' },
+    //       { id: 'A', title: 'Problem A' },
     //   ],
-    //   staffs: ['大森 智仁', '加藤 剛', '角野 祐弥', '曽根 大雅', '中野 瑛一', '松本 和彦', '森 順平', '山岡 宙太', '山崎 宏紀', '脇坂 遼'],
+    //   staffs: [],
     // },
     {
         component: ContestInfo,
