@@ -30,6 +30,18 @@ const Data = {
         links: [
             { title: "コンテストページ", url: "https://atcoder.jp/contests/kupc2020/" },
         ],
+        problems: [
+            { id: 'A', title: 'Classroom Distance' },
+            { id: 'B', title: 'Numbers on Papers' },
+            { id: 'C', title: 'Grid and Substrings' },
+            { id: 'D', title: 'Stick Combination' },
+            { id: 'E', title: 'Sequence Partitioning' },
+            { id: 'F', title: 'GRIDMST' },
+            { id: 'G', title: 'Counting Angels' },
+            { id: 'J', title: 'Median Query' },
+            { id: 'L', title: 'Inside Story of Median Query' },
+            { id: 'M', title: 'Many Parenthesis' },
+        ],
         staffs: ['大森 智仁', '加藤 剛', '角野 祐弥', '曽根 大雅', '中野 瑛一', '松本 和彦', '森 順平', '山岡 宙太', '山崎 宏紀', '脇坂 遼'],
     },
 
