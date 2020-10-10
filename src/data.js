@@ -37,6 +37,7 @@ const Data = {
             { id: 'D', title: 'Stick Combination' },
             { id: 'E', title: 'Sequence Partitioning' },
             { id: 'F', title: 'GRIDMST' },
+            { id: 'G', title: 'Counting Angels' },
             { id: 'J', title: 'Median Query' },
             { id: 'L', title: 'Inside Story of Median Query' },
             { id: 'M', title: 'Many Parenthesis' },
