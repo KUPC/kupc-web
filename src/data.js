@@ -38,6 +38,7 @@ const Data = {
             { id: 'E', title: 'Sequence Partitioning' },
             { id: 'F', title: 'GRIDMST' },
             { id: 'G', title: 'Counting Angels' },
+            { id: 'I', title: 'Coloring Paths' },
             { id: 'J', title: 'Median Query' },
             { id: 'L', title: 'Inside Story of Median Query' },
             { id: 'M', title: 'Many Parenthesis' },
